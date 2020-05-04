@@ -1,5 +1,5 @@
-# Airflow-setup-ubuntu
-### Installation of Airflow in ubuntu server - full detailed steps
+# Apache-Airflow-setup-ubuntu
+### Installation of Apache Airflow in ubuntu server - full detailed steps
 ### Requirements:
   1. Ubuntu machine
   2. Python 2.7
