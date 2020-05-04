@@ -4,7 +4,7 @@
   1. Ubuntu machine
   2. Python 2.7
   
-### Updating server and installing python 2.7
+### Updating server and installing python setup tools
   sudo apt-get update
 
   export LC_ALL="en_US.UTF-8"
