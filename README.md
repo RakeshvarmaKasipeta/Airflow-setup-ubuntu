@@ -36,12 +36,18 @@
   ALTER ROLE ubuntu CREATEDB;
 
   GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public to ubuntu;
+  
+  postgres-# \du # listing all the user in postgres
 
-  postgres-# \c airflow
+  postgres-# \c airflow # checking into airflow database
 
-  airflow=# \conninfo
+  airflow=# \conninfo # checking info of airflow database
+  
+  airflow=# \q # exiting from airflow database
+  
+  exit # exit from the psql server
 
-  psql -d airflow
+  psql -d airflow # testing airflow from ubuntu server
 
 ### Changing the configuration file
   sudo nano /etc/postgresql/9.5/main/pg_hba.conf
@@ -94,7 +100,7 @@
   sudo pip install celery==3.1.17
 
 ### Checking installation of airflow
-  airflow webserver # opens at localhost:8080/Admin/ or PublicIPAddress:8080/Admin
+  airflow webserver # opens at localhost:8080/Admin/ or PublicIPAddress:8080/Admin/
 
   airflow scheduler
 
